@@ -4,7 +4,7 @@ const { Database } = require('sqlite3').verbose();
 
 // Returns a new database object and automatically opens the database
 // Database method accepts a callback function for successful connection
-const db = new Database('bangazon.sqlite', () => console.log('Connected!'));
+const db = new Database('bangazon.sqlite', () => console.log('Tables added!'));
 
 // Passing in IF NOT EXISTS after CREATE TABLE will check to make sure there are no tables named 'customers'
 // If it does exist, this line will not run
